@@ -1,0 +1,12 @@
+http://localhost:8081/gestaoapolice/comissao/api/provisao/tipoproduto/1
+{
+    "tpPropm": 1,
+    "tpPropmSupor": null,
+    "dsTipoPropm": "SEGUROS",
+    "icApurcMeta": "S",
+    "icObgteAtimtMeta": "S",
+    "icFormaMetaPerct": "N",
+    "vlPerctFormaMeta": 0,
+    "cdUsuroUltmaAlter": "ADMPRO",
+    "dtUltmaAlter": "2009-05-28"
+  }

@@ -1,0 +1,96 @@
+//  http://localhost:8081/gestaoapolice/comissao/api/provisao/tipoproduto?page=0&size=10
+{
+    "content": [
+      {
+        "tpPropm": 1,
+        "tpPropmSupor": null,
+        "dsTipoPropm": "SEGUROS",
+        "icApurcMeta": "S",
+        "icObgteAtimtMeta": "S",
+        "icFormaMetaPerct": "N",
+        "vlPerctFormaMeta": 0,
+        "cdUsuroUltmaAlter": "ADMPRO",
+        "dtUltmaAlter": "2009-05-28"
+      },
+      {
+        "tpPropm": 2,
+        "tpPropmSupor": null,
+        "dsTipoPropm": "CAPITALIZACAO",
+        "icApurcMeta": "N",
+        "icObgteAtimtMeta": "N",
+        "icFormaMetaPerct": "N",
+        "vlPerctFormaMeta": null,
+        "cdUsuroUltmaAlter": "ADMPRO",
+        "dtUltmaAlter": "2009-05-28"
+      },
+      {
+        "tpPropm": 3,
+        "tpPropmSupor": null,
+        "dsTipoPropm": "PREVIDENCIA",
+        "icApurcMeta": "N",
+        "icObgteAtimtMeta": "N",
+        "icFormaMetaPerct": "N",
+        "vlPerctFormaMeta": null,
+        "cdUsuroUltmaAlter": "ADMPRO",
+        "dtUltmaAlter": "2009-05-28"
+      },
+      {
+        "tpPropm": 4,
+        "tpPropmSupor": 1,
+        "dsTipoPropm": "REAL SEGUROS",
+        "icApurcMeta": "N",
+        "icObgteAtimtMeta": "N",
+        "icFormaMetaPerct": "N",
+        "vlPerctFormaMeta": 0,
+        "cdUsuroUltmaAlter": "ADMPRO",
+        "dtUltmaAlter": "2009-05-28"
+      },
+      {
+        "tpPropm": 5,
+        "tpPropmSupor": 1,
+        "dsTipoPropm": "TOKIO VIDA",
+        "icApurcMeta": "N",
+        "icObgteAtimtMeta": "N",
+        "icFormaMetaPerct": "N",
+        "vlPerctFormaMeta": 0,
+        "cdUsuroUltmaAlter": "ADMPRO",
+        "dtUltmaAlter": "2009-05-28"
+      },
+      {
+        "tpPropm": 6,
+        "tpPropmSupor": 1,
+        "dsTipoPropm": "TOKIO MARINE",
+        "icApurcMeta": "N",
+        "icObgteAtimtMeta": "N",
+        "icFormaMetaPerct": "N",
+        "vlPerctFormaMeta": 0,
+        "cdUsuroUltmaAlter": "ADMPRO",
+        "dtUltmaAlter": "2009-05-28"
+      }
+    ],
+    "pageable": {
+      "pageNumber": 0,
+      "pageSize": 10,
+      "sort": {
+        "unsorted": true,
+        "sorted": false,
+        "empty": true
+      },
+      "offset": 0,
+      "unpaged": false,
+      "paged": true
+    },
+    "totalPages": 1,
+    "totalElements": 6,
+    "last": true,
+    "numberOfElements": 6,
+    "first": true,
+    "size": 10,
+    "number": 0,
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "empty": false
+  }

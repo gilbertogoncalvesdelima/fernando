@@ -1,0 +1,84 @@
+http://localhost:8081/gestaoapolice/comissao/api/provisao/lval/find-tipo-lancamento
+[
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "ADI",
+      "descrip": "ADIANTAMENTO"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "ADP",
+      "descrip": "ADIANTAMENTO PARCELADO"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "ADC",
+      "descrip": "ADICIONAL"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJF",
+      "descrip": "AJUSTE DE COFINS SIMPLES NAC"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJL",
+      "descrip": "AJUSTE DE CSLL SIMPLES NAC"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJS",
+      "descrip": "AJUSTE DE IMPOSTOS SIMPLES NAC"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJI",
+      "descrip": "AJUSTE DE IR SIMPLES NAC"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJJ",
+      "descrip": "AJUSTE DE ISS SIMPLES NAC"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJP",
+      "descrip": "AJUSTE DE PIS SIMPLES NAC"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "CAI",
+      "descrip": "CAIXA ECONOMICA"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "GMA",
+      "descrip": "GANHE MAIS"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "PLR",
+      "descrip": "PLR"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "PEL",
+      "descrip": "PLUS EMPRESARIAL"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "PEA",
+      "descrip": "PLUS ENGENHARIA"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "RAD",
+      "descrip": "RECUPERAÇÃO DO ADIANTAMENTO"
+    },
+    {
+      "tipoLval": "TPOPCOMI",
+      "codLval": "AJT",
+      "descrip": "REGULARIZACAO SALDO"
+    }
+  ]
+  
