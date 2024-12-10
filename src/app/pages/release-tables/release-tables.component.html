@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <mat-radio-group [(ngModel)]="selectedRoute" (change)="navigateTo(selectedRoute)" class="d-flex">
+            <mat-radio-button value="manual-postings" class="me-3 button-releases">
+                Lançamentos Manuais
+            </mat-radio-button>
+            <mat-radio-button value="releases-processed" class="button-releases">
+                Lançamentos Processados
+            </mat-radio-button>
+        </mat-radio-group>
+        <button mat-raised-button color="primary" class="import-file">
+            Importar Arquivo
+        </button>
+    </div>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="col-6">
+        <div class="title-container">
+            <h3 class="title">FECHAMENTO MENSAL</h3>
+            <div class="underline"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Data de fechamento</mat-label>
+                <input matInput [matDatepicker]="picker1" placeholder="Data de fechamento">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Data próxima diária</mat-label>
+                <input matInput [matDatepicker]="picker2" placeholder="Data próxima diária">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Carga da Produção do Sistema Plataforma</mat-label>
+                <input matInput type="text" placeholder="Número Versão" value="3484">
+            </mat-form-field>
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Data de cargos</mat-label>
+                <input matInput [matDatepicker]="picker3" placeholder="Data de Cargos">
+                <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                <mat-datepicker #picker3></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Período Referência</mat-label>
+                <input matInput type="text" placeholder="Período Referência" value="202311">
+            </mat-form-field>
+            <mat-form-field class="w-100" appearance="outline">
+                <input matInput [matDatepicker]="picker4" placeholder="Data de seguros">
+                <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+                <mat-datepicker #picker4></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+</div>
