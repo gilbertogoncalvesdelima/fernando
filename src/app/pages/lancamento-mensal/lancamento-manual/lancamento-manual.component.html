@@ -1,0 +1,103 @@
+<div class="container-table">
+    <div class="table-responsive">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table-bordered">
+            <ng-container matColumnDef="SG_EMPRE">
+                <th mat-header-cell *matHeaderCellDef> Emp. </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element['SG_EMPRE']" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="DT_CTBIL">
+                <th mat-header-cell *matHeaderCellDef> Data </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element['DT_CTBIL']" type="date" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="VL_PREMT">
+                <th mat-header-cell *matHeaderCellDef> Valor </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element['VL_PREMT']" type="number" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="tp">
+                <th mat-header-cell *matHeaderCellDef> Tp </th>
+                <td mat-cell *matCellDef="let element">
+                    <mat-select [(ngModel)]="element.tp" placeholder="Selecionar" class="no-border">
+                        <mat-option *ngFor="let option of tpOptions" [value]="option">
+                            {{ option }}
+                        </mat-option>
+                    </mat-select>
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="agencia">
+                <th mat-header-cell *matHeaderCellDef> Agência </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element.agencia" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="CD_PRODUTO">
+                <th mat-header-cell *matHeaderCellDef> Produto </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element['CD_PRODUTO']" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="grupo">
+                <th mat-header-cell *matHeaderCellDef> Grupo </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element.grupo" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="CD_CNAPE">
+                <th mat-header-cell *matHeaderCellDef> Cenape </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element['CD_CNAPE']" class="no-border" />
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="QT_PREMT">
+                <th mat-header-cell *matHeaderCellDef> Quantidade </th>
+                <td mat-cell *matCellDef="let element">
+                    <input matInput [(ngModel)]="element['QT_PREMT']" type="number" class="no-border" />
+                </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"> </tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns; let i = index"
+                [ngClass]="{'odd-row': i % 2 === 0, 'even-row': i % 2 !== 0}"></tr>
+        </table>
+    </div>
+    <mat-paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="pageChanged($event)">
+    </mat-paginator>
+</div>
+<div class="row mt-5">
+    <div class="col-12 col-lg-5 mb-3">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Total Débito</mat-label>
+            <input matInput [value]="totalDebito" />
+        </mat-form-field>
+    </div>
+    <div class="col-12 col-lg-5 mb-3">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Total Crédito</mat-label>
+            <input matInput [value]="totalCredito" />
+        </mat-form-field>
+    </div>
+    <div class="col-12 col-lg-2 mb-3">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Total Débito</mat-label>
+            <input matInput [value]="totalDebito2" />
+        </mat-form-field>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-12 col-md-6 mb-3">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Empresa</mat-label>
+            <input matInput [value]="empresa" />
+        </mat-form-field>
+    </div>
+    <div class="col-12 col-md-6 mb-3">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Última Alteração</mat-label>
+            <input matInput [value]="ultimaAlteracao" />
+        </mat-form-field>
+    </div>
+</div>
