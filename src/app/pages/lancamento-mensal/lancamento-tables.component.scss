@@ -1,0 +1,65 @@
+app-lancamento-tables {
+    .container-table {
+        width: 90vw;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .no-border {
+        border: none !important;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .no-border:focus {
+        outline: none;
+    }
+
+    table.mat-elevation-z8 th,
+    table.mat-elevation-z8 td {
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .mdc-data-table__row:last-child .mdc-data-table__cell {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .import-file {
+        color: white !important;
+        padding: 12px 24px !important;
+    }
+
+    .button-releases {
+        color: #b7b7b7 !important;
+        font-weight: 500 !important;
+    }
+
+    .odd-row {
+        background-color: #f2f2f2;
+    }
+
+    .even-row {
+        background-color: #ffffff;
+    }
+
+    .odd-row input,
+    .even-row input {
+        background-color: inherit;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Essa não é e não deve ser a solução final */
+    input[type="number"].no-border,
+    input[type="date"].no-border {
+      transform: translateX(0.75vw); 
+}
+
+}
