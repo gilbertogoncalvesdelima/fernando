@@ -1,0 +1,11 @@
+<div class="header">
+    <h2 mat-dialog-title>Editar</h2>
+    <button mat-button (click)="closeModal()">X</button>
+</div>
+<mat-dialog-content>
+  <p>Dados da Coluna:</p>
+  <pre>{{ data | json }}</pre>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button (click)="closeModal()">Salvar</button>
+</mat-dialog-actions>

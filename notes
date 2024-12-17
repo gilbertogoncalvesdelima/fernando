@@ -1,0 +1,19 @@
+http://localhost:8081/gestaoapolice/comissao/api/provisao/agrupamentoempresa?page=0&size=10 -- ta faltando o dado da descricao da empresa
+http://localhost:8081/gestaoapolice/comissao/api/provisao/agrupamentoproduto?page=0&size=10 -- ta faltando codigo e descricao da carteira
+
+
+
+================================= LANCAMENTOS MANUAIS =========================
+AO FAZER UPLOAD DO EXCEL
+
+- esses atributos sao pra quais colunas da tabela
+  //"CD_CANAL_VENDA":2,
+  // "CD_LOCAL_DEBITO":9126,
+  // "CD_LOCAL_CREDITO":9623,
+
+ - atualmente a tabela tem 3 colunas sem atributos
+  'tp',
+  'agencia',
+  'grupo',
+
+======================================================================================

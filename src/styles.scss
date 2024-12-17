@@ -1,0 +1,90 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$controle-fechamento-mensal-primary: mat.define-palette(
+  (
+    50: #eafaf7,  // Tom mais claro
+    100: #c8efe7, // Mais próximo de 50%
+    200: #a3e4d5, // Tom médio-claro
+    300: #7ed9c4, // Tom intermediário
+    400: #5bd0b6, // Aproximando do principal
+    500: #23C5AF, // Cor principal
+    600: #1ea891, // Tom mais escuro próximo
+    700: #188e7b, // Escurecendo
+    800: #127566, // Mais escuro ainda
+    900: #0a5447, // Tom bem escuro
+    A100: #a3ffe6, // Tons de destaque - claro
+    A200: #70ffdb, // Tons de destaque intermediário
+    A400: #3dffd0, // Tom de destaque vivo
+    A700: #1affc3, // Tom de destaque escuro
+    contrast: (
+      50: #000000,  // Texto preto em tons muito claros
+      100: #000000,
+      200: #000000,
+      300: #000000,
+      400: #000000,
+      500: #FFFFFF,  // Texto branco para contraste ideal na cor principal
+      600: #FFFFFF,
+      700: #FFFFFF,
+      800: #FFFFFF,
+      900: #FFFFFF,
+      A100: #000000,  // Preto para destacar tons claros
+      A200: #000000,
+      A400: #000000,
+      A700: #000000,
+    )
+  )
+);
+
+
+$controle-fechamento-mensal-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$controle-fechamento-mensal-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$controle-fechamento-mensal-theme: mat.define-light-theme((
+  color: (
+    primary: $controle-fechamento-mensal-primary,
+    accent: $controle-fechamento-mensal-accent,
+    warn: $controle-fechamento-mensal-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($controle-fechamento-mensal-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.left {
+  text-align: left !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.mdc-button {
+  min-width: 0 !important;
+}
